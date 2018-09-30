@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss.SSS}: %-5p %c{1} - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="grocerymarketLogfile" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="logs/grocerymarket.log" />
+		<param name="MaxFileSize" value="2000KB" />
+		<param name="MaxBackupIndex" value="500" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss.SSS}: %p %t %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="arxivLogfile" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="logs/arxiv.log" />
+		<param name="MaxFileSize" value="2000KB" />
+		<param name="MaxBackupIndex" value="500" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss.SSS}: %p %t %c - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="yahooLogfile" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="logs/yahoo.log" />
+		<param name="MaxFileSize" value="2000KB" />
+		<param name="MaxBackupIndex" value="500" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss.SSS}: %p %t %c - %m%n" />
+		</layout>
+	</appender>
+
+	<category name="arxiv">
+		<priority value="ALL" />
+		<appender-ref ref="console" />
+		<appender-ref ref="arxivLogfile" />
+	</category>
+
+	<category name="util">
+		<priority value="ALL" />
+		<appender-ref ref="console" />
+		<appender-ref ref="arxivLogfile" />
+	</category>
+
+	<category name="grocerymarket">
+		<priority value="ALL" />
+		<appender-ref ref="console" />
+		<appender-ref ref="grocerymarketLogfile" />
+	</category>
+
+	<category name="poplyrics">
+		<priority value="ALL" />
+		<appender-ref ref="console" />
+	</category>
+
+	<category name="yahoo">
+		<priority value="ALL" />
+		<appender-ref ref="console" />
+		<appender-ref ref="yahooLogfile" />
+	</category>
+
+</log4j:configuration>

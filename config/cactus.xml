@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<baseUrl>http://cactusathome.lu/SHOPPING/CATEGORIES/Produits-surgeles.aspx</baseUrl>
+	<iterator>grocerymarket.CactusIterator</iterator>
+	<itemName>0,1,0,1,0,0</itemName>
+	<itemPrice>0,1,0,3,0,0</itemPrice>
+	<unitPrice>0,1,0,3,3</unitPrice>
+</properties>

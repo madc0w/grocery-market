@@ -1,0 +1,90 @@
+body {
+	font-family: Arial;
+	background-color: #202020;
+}
+
+#main {
+	background-image: url('../images/pw_maze_white.png');
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 80px;
+}
+
+#addtoany {
+	float: right;
+}
+
+#byline {
+	padding-top: 20px;
+	font-size: .7em;
+}
+
+#title {
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+
+#header {
+	background-color: white;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	width: 80%;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#images img {
+	width: 800px;
+	box-shadow: 20px 10px 10px #404040;
+}
+
+.imageDiv {
+	width: 800px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#loading {
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	position: fixed;
+	text-align: center;
+	width: 200px;
+	margin-top: 300px;
+	margin-left: 80%;
+	background-color: #a0a0a0;
+	color: white;
+	box-shadow: 10px 10px 10px #404040;
+	font-weight: bold;
+}
+
+#micropayment td {
+	vertical-align: top;
+}
+
+#micropayment {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ddd;
+	padding: 10px;
+	vertical-align: top;
+	border-radius: 10px;
+	box-shadow: 8px 5px 5px #888;
+}
+
+.lyrics {
+	margin-left: 50px;
+	padding-bottom: 20px;
+}
